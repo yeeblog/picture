@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
-    <title>布鲁 | github图床 - 布鲁网络www.i8o.cc</title>
+    <title>YEE | github图床 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/mdui/css/mdui.min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"/>
@@ -27,7 +27,7 @@
     <section id="main_content">
       
     <div id="rin-headimg"></div>
-    <div class="rin-name">布鲁</div>
+    <div class="rin-name">YEE</div>
     <div class="rin-description"><h2> 
     <script type="text/javascript" src="https://yi.i8o.cc/yyan/?format=js&=utf-8"></script> 
     <script>yyan()</script>
@@ -56,8 +56,8 @@
     </div>
     </section>
 <footer id="rin-footer">
-    <div>©2020-2021 Blue. | Made with love by Blue. | BG: <a href="https://cdn.jsdelivr.net/gh/用户名/仓库名@main/">
-	   <img class="badge" src="https://data.jsdelivr.com/v1/package/gh/用户名/仓库名/badge"></a>
+    <div>©2020-2021 Blue. | Made with love by Blue. | BG: <a href="https://cdn.jsdelivr.net/gh/yeeblog/picture@main/">
+	   <img class="badge" src="https://data.jsdelivr.com/v1/package/gh/yeeblog/picture/badge"></a>
 		</div>
 </footer>
 <script src="bideo.js"></script>
@@ -69,13 +69,13 @@
 function uploadimg(file){
       var timestamp=new Date().getTime();//获取时间戳
       var nameofimg=timestamp+"."+houzhui;//以事件戳重命名
-      var picurl="https://cdn.jsdelivr.net/gh/用户名/仓库名@main/"+nameofimg;
+      var picurl="https://cdn.jsdelivr.net/gh/yeeblog/picture@main/"+nameofimg;
     var settings = {
-    "url": "https://api.github.com/repos/用户名/仓库名/contents/"+nameofimg,
+    "url": "https://api.github.com/repos/yeeblog/picture/contents/"+nameofimg,
     "method": "PUT",
     "timeout": 0,
     "headers": {
-        "Authorization": "Bearer 这里填写生成的tokens",
+        "Authorization": "Bearer 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",
         "Content-Type": "text/plain"
     },
     "data": "{\r\n  \"message\": \"upload\",\r\n  \"content\": \""+ file +"\"\r\n}",
